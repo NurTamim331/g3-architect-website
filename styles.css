@@ -5,6 +5,15 @@
     font-weight: 400;
     font-style: normal;
 }
+.dark-1{
+    color: rgb(19, 19, 19);
+}
+.dark-3{
+    color: #727272;
+}
+.orange{
+    color: #FF900E;
+}
 /* work for the top section  */
 header{
     display: flex;
@@ -21,9 +30,7 @@ header{
     flex-direction:  row;
     width: 100%;
 }
-.dark-1{
-    color: rgb(19, 19, 19);
-}
+
 .nav-container>h1{
     font-weight: bold;
     font-size: 2.8rem;
@@ -76,4 +83,47 @@ nav>li{
 }
 .banner-pic{
     width: 100%;
+}
+
+/* feature container work  */
+main{
+    padding: 5.5rem;
+}
+.feature-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:10px;
+}
+.feature-list-container{
+    width: 50%;
+}
+#feature-title{
+    font-size: 2.815rem;
+}
+.feature-button{
+    padding: 1rem 2rem;
+}
+.team-container{
+    width: 50%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap:1.5rem;
+}
+.team-container>img{
+    width: 100%;
+    height: fit-content;
+    border-radius: 0.5rem;;
+}
+/* making the heading responsive  */
+@media screen and (max-width : 576px){
+    /* making the heading responsive  */
+    .nav-container{
+        flex-direction: column;
+    }
+    nav{
+        flex-direction: colu;
+    }
 }
